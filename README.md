@@ -34,8 +34,8 @@ Both DMS_MaP and 2A3_MaP are examples of multidimensional chemical mapping (MCM)
 
 ## Problem and solution
 
-The current work the DNABERT from Hudding face is involved to solve the regression problrm. For this pupposes CLS mask emmbeding of the RNA secuences was used as output vector and was passed into regressional head. 
+In the current work the DNABERT from Hudding face (Zhihan Zhou, Yanrong Ji, Weijian Li, Pratik Dutta, Ramana Davuluri, Han Liu // DNABERT-2: Efficient Foundation Model and Benchmark For Multi-Species Genome, https://doi.org/10.48550/arXiv.2306.15006, https://huggingface.co/Peltarion/dnabert-distilbert) was employed to solve this regression problrm. For this pupposes CLS mask emmbeding of the RNA secuences was used as output vector and passed into regressional head build form several Layers with GELU activation function.
 
-For the sake of saving GPU resourses traing was done using the small chunk of data. 
+For the sake of saving GPU resourses traing was done using the small chunk of data.  
 
 The MAE error for  this model was: 0.2887
